@@ -1,0 +1,96 @@
+/* Reset básico para garantir uma aparência consistente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definições básicas de estilo para o corpo */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilo do canvas */
+canvas {
+  border: 2px solid #fff;
+  background-color: #000;
+  display: block;
+}
+
+/* Estilos para os modais */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #222;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+}
+
+.modal h2,
+.modal h1 {
+  color: #f1c40f;
+  margin-bottom: 20px;
+}
+
+.modal p {
+  margin-bottom: 20px;
+}
+
+.modal button {
+  background: #f1c40f;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal button:hover {
+  background: #e1b12c;
+}
+
+/* Estilos para os contadores de vidas e pontuação */
+#livesDisplay,
+#scoreDisplay {
+  position: absolute;
+  font-size: 20px;
+  color: #f1c40f;
+  font-weight: bold;
+}
+
+#livesDisplay {
+  top: 20px;
+  left: 20px;
+}
+
+#scoreDisplay {
+  top: 20px;
+  right: 20px;
+}
+
+/* Adiciona uma transição suave para os modais */
+.modal-content {
+  transition: opacity 0.3s ease;
+}

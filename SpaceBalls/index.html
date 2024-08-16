@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Balls</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas></canvas>
+
+    <!-- Modal de Boas-Vindas -->
+    <div id="welcomeModal" class="modal">
+      <div class="modal-content">
+        <h2>Bem-vindo ao Space Balls!</h2>
+        <p>
+          Use as teclas de seta para mover o triângulo e a barra de espaço para
+          atirar.
+        </p>
+        <button id="startGame">Iniciar Jogo</button>
+      </div>
+    </div>
+
+    <!-- Modal de fim de jogo -->
+    <div id="gameOverModal" class="modal">
+      <div class="modal-content">
+        <h1>Game Over</h1>
+        <p>Pontuação Final: <span id="finalScore"></span></p>
+        <button id="restartGame">Reiniciar Jogo</button>
+      </div>
+    </div>
+
+    <!-- Contadores de vidas e pontuação -->
+    <div id="livesDisplay">Vidas: ❤️❤️❤️</div>
+    <div id="scoreDisplay">Bolas acertadas: 0</div>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+  </body>
+</html>
